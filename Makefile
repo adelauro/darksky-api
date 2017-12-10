@@ -9,4 +9,4 @@ gobuild:  *.go
 	CGO_ENABLED=0 GOOS=linux go build .
 
 run:
-	docker run --rm -d --name darksky_api --network=isolated_nw -e DARKSKY_KEY=${DARKSKY_KEY} docker.blnk.io/darksky-api
+	docker run -d --name darksky_api --network=isolated_nw -e DARKSKY_KEY=${DARKSKY_KEY} docker.blnk.io/darksky-api
